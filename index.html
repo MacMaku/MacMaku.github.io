@@ -5,11 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: black;
+    }
+    .points{
+        color: white;
+    }
+    </style>
 </head>
 <body>
-    <p class="points">Points: </p>
-    <canvas style="border: solid 1px black" width="400px" height="400px"></canvas>
-    <input type="range" min="0" max="180" value="50" class="slider" id="myRange">
+    <div style="max-width: 1000px; border: solid 1px black; margin: auto" >
+        <p class="points">Points: </p>
+        <canvas style="border: solid 1px black;" width="1000px" height="600px"></canvas>
+        <br/>
+        <input style="marign: auto" type="range" min="0" max="180" value="50" class="slider" id="myRange">
+    </div>
     <script src="transformation.js"></script>
     <script src="vertexShader.js"></script>
     <script src="fragmentShader.js"></script>
